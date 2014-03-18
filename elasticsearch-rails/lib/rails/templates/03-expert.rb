@@ -79,6 +79,8 @@ puts
 say_status  "Models", "Adding complex schema...\n", :yellow
 puts        '-'*80, ''
 
+
+generate :scaffold, "Article title:string content:string published_on:datetime"
 generate :scaffold, "Category title"
 generate :scaffold, "Author first_name last_name"
 generate :scaffold, "Authorship article:references author:references"
